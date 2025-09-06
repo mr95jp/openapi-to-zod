@@ -12,6 +12,7 @@ build/
 
 # Generated schemas
 generated-schemas/
+schema/
 schemas/
 document.json
 
