@@ -1,0 +1,17 @@
+{
+  "name": "zod-schema-generator",
+  "version": "1.0.0",
+  "description": "Generate Zod schemas from OpenAPI JSON document",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node generator.js",
+    "generateZod": "node generator.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
+}
