@@ -1,17 +1,21 @@
 {
   "name": "zod-schema-generator",
   "version": "1.0.0",
-  "description": "Generate Zod schemas from OpenAPI JSON document",
-  "main": "index.js",
+  "description": "A TypeScript-based tool that automatically generates Zod schemas from OpenAPI 3.1.0 JSON documents",
+  "main": "dist/index.js",
+  "license": "MIT",
   "scripts": {
-    "generate": "node generator.js",
-    "generateZod": "node generator.js"
+    "build": "tsc",
+    "generate": "npm run build && node dist/index.js",
+    "generateZod": "npm run build && node dist/index.js",
+    "dev": "tsc --watch"
   },
   "type": "module",
   "dependencies": {
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/node": "^20.10.0"
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
   }
 }

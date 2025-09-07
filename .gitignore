@@ -14,7 +14,11 @@ build/
 generated-schemas/
 schema/
 schemas/
-document.json
+ts-schema/
+test-schema/
+
+# Sample files (keep document.json as example)
+# document.json
 
 # IDE
 .vscode/
